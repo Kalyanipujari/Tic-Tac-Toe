@@ -6,6 +6,12 @@ body{
     background-color: #548687;
     text-align: center;
 }
+h1{
+    font-size: 2.5rem;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #a9c5c5;;
+}
 .container{
     height:70vh;
     display: flex;
