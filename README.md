@@ -25,7 +25,7 @@ You can try out the game live here.
 ### Installation
 To run the game locally, simply clone this repository to your local machine:
 
-*git clone https://github.com/your_username/tic-tac-toe.git*
+*git clone https://github.com/Kalyanipujari/Tic-Tac-Toe-HTML-CSS-JS.git*
 
 Then, open the *index.html* file in your web browser to start playing.
 
