@@ -41,7 +41,7 @@ boxes.forEach((box) => {
     });
 });
 
-
+//disable boxes after winning & once they clicked
 const disableBoxes = () =>{
     for(let box of boxes)
     {
