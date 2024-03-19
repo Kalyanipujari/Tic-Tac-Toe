@@ -3,6 +3,7 @@ let resetBtn1 = document.querySelector("#reset-button1");
 let resetBtn2=document.querySelector("#reset-button2");
 let msgContainer = document.querySelector(".msg-container");
 let msg=document.querySelector("#msg");
+let disabledBoxes=0;//to check game is over no one won
 
 //playerX, playerY
 let turn0 = true;
@@ -35,20 +36,20 @@ boxes.forEach((box) => {
             box.innerText="X";
             turn0=true;
         }
-        box.disabled=true;//because if you click on button twice it change the value
-
+        disabledBoxes+=1;
+        box.disabled=true;//because if you click on button twice it change the value O-X, X-O
         checkWinner();
+        gameDraw(disabledBoxes);
     });
 });
 
-//disable boxes after winning & once they clicked
+//disable boxes after winning 
 const disableBoxes = () =>{
     for(let box of boxes)
     {
         box.disabled=true;
     }
 };
-
 
 const enableBoxes = () =>{
     for(let box of boxes)
@@ -58,12 +59,22 @@ const enableBoxes = () =>{
     }
 };
 
+//displaying winner
 const showWinner = (winner) =>{
         msg.innerText=`Congratulations, Winner is ${winner}`;
         msgContainer.classList.remove("hide");
         disableBoxes();
+        disabledBoxes=0;
 };
 
+//to check game is over no one won
+const gameDraw = (disabledBoxes) =>{
+   if( disabledBoxes == 9 ){
+        msg.innerText=`Ooppss!! It's Draw :(`;
+        msgContainer.classList.remove("hide");
+        disabledBoxes=0;
+   }
+};
 
 const checkWinner = () =>{
     for(let pattern of winningPatterns)
