@@ -1,4 +1,4 @@
-# Tic-Tac-Toe-HTML-CSS-JS
+# Tic-Tac-Toe
 A classic Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript.
 
 ### Table of Contents
