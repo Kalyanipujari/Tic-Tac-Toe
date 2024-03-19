@@ -4,7 +4,6 @@ A classic Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript.
 ### Table of Contents
 * Description
 * Features
-* Demo
 * Installation
 * Usage
 * Contributing
@@ -18,9 +17,6 @@ This project is a simple yet entertaining implementation of the traditional Tic-
 - Clear indication of the winner player.
 - Game result display.
 - Restart option to play again after the game ends.
-
-### Demo
-You can try out the game live here.
 
 ### Installation
 To run the game locally, simply clone this repository to your local machine:
